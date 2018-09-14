@@ -11,7 +11,7 @@ const svgSprite = require("gulp-svg-sprite")
 // BrowserSync Options
 const browserSyncOption = {
   server: {
-    baseDir: "docs"
+    baseDir: "dist"
   },
   startPath: "./index.html",
   open: false,
@@ -56,7 +56,7 @@ gulp.task("sprite", function() {
         }
       })
     )
-    .pipe(gulp.dest("docs"))
+    .pipe(gulp.dest("dist"))
 })
 
 // Browser Sync
@@ -72,7 +72,7 @@ gulp.task("reload", function(done) {
 
 // Watch
 gulp.task("watch", () => {
-  gulp.watch("docs/*", gulp.series("reload"))
+  gulp.watch("dist/*", gulp.series("reload"))
   gulp.watch("src/icon/*.svg", gulp.series("sprite"))
 })
 
