@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Sprite Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ontouchstart>
+
+  <h1>SVG Sprite Test</h1>
+
+  <p>
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter is-xs">
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter is-sm">
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter">
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter is-lg">
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter is-xl">
+    <svg class="icon" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <p class="is-twitter">
+    <svg class="icon is-lg" role="img">
+      <title>Twitter</title>
+      <use xlink:href="sprite.svg#twitter"></use>
+    </svg>
+    <span>Twitter</span>
+  </p>
+
+  <!-- + Polyfill: IE11 -->
+  <script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <!-- - Polyfill: IE11 -->
+
+</body>
+
+</html>

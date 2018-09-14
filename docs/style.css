@@ -1,0 +1,41 @@
+/* shitaji.cssに入れてるリセット */
+
+svg {
+  vertical-align: middle;
+}
+
+svg {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Test */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.is-twitter {
+  color: #1da1f2;
+}
+
+.is-xs {
+  font-size: 75%;
+}
+
+.is-sm {
+  font-size: 87.5%;
+}
+
+.is-lg {
+  font-size: 125%;
+}
+
+.is-xl {
+  font-size: 150%;
+}
